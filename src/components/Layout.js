@@ -1,9 +1,7 @@
 import { Outlet } from 'react-router-dom';
-import { Toaster } from 'react-hot-toast';
-
 import { Suspense } from 'react';
 import AppBar from './AppBar/AppBar';
-//import { AppBar } from './AppBar/AppBar';
+import { Toaster } from 'react-hot-toast';
 
 export const Layout = () => {
   return (
@@ -13,6 +11,7 @@ export const Layout = () => {
         <Outlet />
       </Suspense>
       <Toaster position="top-right" reverseOrder={false} />
+
     </div>
   );
 };
